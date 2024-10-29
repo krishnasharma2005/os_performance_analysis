@@ -9,8 +9,6 @@ A web-based dashboard that monitors system performance in real-time, displaying 
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Screenshots](#screenshots)
-- [License](#license)
 
 ## Overview
 
@@ -39,3 +37,34 @@ Follow these steps to set up the project on your local machine:
    ```bash
    git clone https://github.com/your-username/real-time-os-performance-dashboard.git
    cd real-time-os-performance-dashboard
+
+2. **Install Required Libraries:** Make sure you have Python installed. Then install the required packages:
+   ```bash
+   pip install flask psutil
+
+3. Run the Application Start the Flask server by running:
+   ```bash
+   python app.py
+
+4. Access the Dashboard Open your web browser and go to:
+   ```arduino
+   http://127.0.0.1:5000/
+
+## Usage
+- Real-Time Monitoring: Once the dashboard loads, you’ll see CPU, memory, and disk usage updating every 5 seconds.
+- Toggle Dark Mode: Use the "Toggle Dark Mode" button at the top to switch between light and dark themes.
+- Navigation: Jump to specific sections (CPU, memory, disk) using the navigation links in the top navbar.
+
+## File Structure
+```plaintext
+real-time-os-performance-dashboard/
+├── app.py                     # Flask server and backend logic
+├── monitor.py                 # Collects system performance data
+├── templates/
+│   └── index.html             # Frontend HTML and JavaScript for dashboard
+├── static/
+│   ├── css/
+│   │   └── style.css          # Custom styles (optional if added)
+│   └── js/
+│       └── script.js          # JavaScript for Chart.js and data fetching
+└── README.md                  # Project documentation
