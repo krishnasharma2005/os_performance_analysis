@@ -9,9 +9,11 @@ def index():
 
 @app.route('/metrics')
 def metrics():
-    cpu = psutil.cpu_percent(interval=1)
+    cpu = psutil.cpu_percent(interval=None)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
+
+    print(f"CPU: {cpu}, Mem: {memory}, Disk: {disk}")  # <-- Add this
 
     return jsonify({
         'cpu': cpu,
