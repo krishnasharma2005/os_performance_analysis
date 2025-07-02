@@ -35,8 +35,8 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/krishnasharma2005/real-time-os-performance-dashboard.git
-   cd real-time-os-performance-dashboard
+   git clone https://github.com/krishnasharma2005/os_performance_analysis.git
+   cd os_performance_analysis
 
 2. **Install Required Libraries:** Make sure you have Python installed. Then install the required packages:
    ```bash
