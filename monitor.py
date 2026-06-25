@@ -3,7 +3,7 @@ import time
 import matplotlib.pyplot as plt
 
 # Data lists for plotting
-cpu_data = []
+cpu_data = [] 
 memory_data = []
 disk_data = []
 time_data = []
